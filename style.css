@@ -1,0 +1,214 @@
+
+html {
+    box-sizing: border-box;
+    }
+    *,*:before,*:after {
+        box-sizing: border-box;
+    
+    }
+    
+@font-face {
+    font-family: "TTLakes";
+    font-style: medium;
+    font-weight: 500;
+     
+    src: local("TTLakes"),
+          
+         url("./font/TTLakes-Medium.woff") format("woff"),
+         url("./font/TTLakes-Medium.ttf") format("ttf"),
+         url("./font/TTLakes-Medium.eot") format("eot");
+
+  }
+  
+@font-face {
+    font-family: "TTLakes";
+    font-style: normal;
+    font-weight: 400;
+     
+    src: local("TTLakes"),
+          
+         url("./font/TTLakes-Regular.woff") format("woff"),
+         url("./font/TTLakes-Regular.ttf") format("ttf"),
+         url("./font/TTLakes-Regular.eot") format("eot");
+
+  }
+  @font-face {
+    font-family: "TTLakes";
+    font-style: bold;
+    font-weight: 700;
+     
+    src: local("TTLakes"),
+          
+         url("./font/TTLakes-Bold.woff") format("woff"),
+         url("./font/TTLakes-Bold.ttf") format("ttf"),
+         url("./font/TTLakes-Bold.eot") format("eot");
+
+  }
+/* Ширина экрана 320*/
+body {
+    font-family: "TTLakes", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    margin:0;
+}
+.swiper {
+    width: 320px;
+    height: 154px;
+    background-color:  #F8F8F8;
+    
+  }
+
+
+
+.conteiner {
+    width:320px;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    
+}
+.conteiner__title{
+    padding: 16px;
+    color:#7E7E82;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin:0;
+}
+
+
+.item {
+    border-radius: 4%;
+    height: 72px;
+    width:224px;
+    
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 16px;
+   margin-left: 16px;
+    border:1px solid  #EAEAEA;
+    background-color: white;
+    
+}
+
+.list{
+display: flex;
+vertical-align: middle;
+align-items: center;
+}
+
+
+.item__logo{
+    
+    height: auto;
+    width:auto;
+ 
+}
+
+.item__circle{
+    background-image: url("/Macet3/img/go.png");
+    height: 40px;
+    width:40px;
+   
+}
+.collection{
+    display: none;
+}
+
+/*Средний экран */
+@media (min-width: 768px) {
+    .conteiner {
+        width:768px;
+       
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      
+    }
+        
+    
+    body{
+        background-color:  #F8F8F8;
+    }
+   .swiper,
+    .swiper-pagination
+   
+    {
+        display: none;
+        }
+.menu__lable:nth-last-child(2),
+.menu__lable:last-child
+{
+    display: none;
+}
+
+    .collection{
+        display: block;
+        margin-bottom: auto;
+       
+    }
+.menu,
+.submenu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    .collection__submenu-hidden {
+        display: none;
+    }
+    .collection__else{
+    position: relative;
+    left: 32px;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    background-color:  #F8F8F8;
+    
+        margin-top: 8px;
+        margin-bottom: 32px;
+        color:  #1B1C21;
+        
+    
+    }
+   .conteiner__title {
+        margin-bottom:16px;
+    }
+    
+
+    .collection__rows{
+        width: 24px;
+        height: 24px;
+        
+        position: absolute;
+        left: -23px;
+        top: -5px;
+        
+       
+    }
+    .rowsupp{
+       
+        background-image: url("./img/rowsupp.png");
+
+    }
+    .rowsdown{
+    
+        background-image: url("./img/rowsbotom.png");
+    }
+}
+/*Широкий экран */
+@media (min-width: 1120px) {
+    .conteiner {
+        width:1120px;
+}
+
+.menu__lable:nth-last-child(2),
+.menu__lable:last-child
+{
+    display: block;
+}
+}
