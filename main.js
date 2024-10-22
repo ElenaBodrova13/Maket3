@@ -17,7 +17,7 @@ const swiper = new Swiper('.swiper', {
   let buttonElse = document.querySelector(".collection__else");
   let submenu = document.querySelector(".submenu");
   let row = document.querySelector(".collection__rows");
-  console.log(row);
+ 
   buttonElse.addEventListener("click", function(){
     submenu.classList.toggle("collection__submenu-hidden");
     

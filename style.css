@@ -118,9 +118,8 @@ align-items: center;
 .collection{
     display: none;
 }
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
 background: #B5B6BC;
-
 }
 /*Средний экран */
 @media (min-width: 768px) {
